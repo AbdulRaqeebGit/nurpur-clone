@@ -1,0 +1,127 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* navbar css */
+.Login {
+  background-color: #009970;
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: 0.3s background-color;
+}
+.Login:hover{
+    background-color: #00b383;
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link{
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+.navlink:hover, .nav-link.active{
+    color: black;
+}
+@media (min-width: 991px) {
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #009970;
+        visibility: hidden;
+        transition:0.3s ease-in-out;
+    }
+    .nav-link:hover::before, .nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+}
+/* video css */
+video {
+  width: 100%;
+  margin: 100px, 0px;
+  background-color: black;
+}
+.our-story {
+  position: relative;
+  height: 600px;
+}
+.text-img {
+  margin: 0 auto;
+  width: fit-content;
+}
+.text-img img {
+  height: 120px;
+  width: 120px;
+}
+.text-img p {
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  color: blue;
+  top: 9%;
+  left: 40%;
+  right: 40%;
+  bottom: 91%;
+}
+.our-story {
+  height: 500%;
+}
+.story-product-img img {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.grass img {
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+}
+/* carousal css */
+.slide-container {
+  max-width: 1240px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0px auto;
+}
+.slide-container:hover {
+  overflow: scroll;
+}
+.slide-content {
+  margin: 0px 40px;
+}
+.card {
+  background-color: white;
+  border-radius: 25px;
+  border: 10px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 320px !important;
+  padding: 10px 14px;
+  margin: 0px 20px;
+}
+.card-image img {
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+}
